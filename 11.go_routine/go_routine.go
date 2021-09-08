@@ -16,6 +16,10 @@ func main() {
 	for _, link := range links {
 		go checkLink(link, c)
 	}
+	
+	for _,link := range links{
+		fmt.Println(<-c)
+	}
 	// for {
 	// 	go checkLink(<-c, c)
 	// }
