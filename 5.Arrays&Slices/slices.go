@@ -1,5 +1,5 @@
 package main
-
+// Simple Array of strings
 import "fmt"
 
 func main() {
