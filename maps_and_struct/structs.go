@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-// type Doctor struct {
-// 	n    int
-// 	act  string
-// 	name []string
-// }
+type Doctor struct {
+	n    int
+	act  string
+	name []string
+}
 type contact struct {
 	email string
 	zip   int
@@ -22,7 +22,7 @@ type person struct {
 
 func main() {
 	per := person{"suv", "mah", contact{"lol", 23}}
-	fmt.Println(per)
+	fmt.Println(per.coninfo.email)
 	// suv := person{"suv", "mah", 23}
 	// suv := person{fn: "suv", ln: "mah", age: 23}
 	// fmt.Println(suv)
@@ -36,11 +36,11 @@ func main() {
 	//What are they
 
 	//Create
-	// d1 := Doctor{
-	// 	n:    1,
-	// 	act:  "lol",
-	// 	name: []string{"lol", "lola", "jola"},
-	// }
-	// fmt.Println(d1.name[1])
+	d1 := Doctor{
+		n:    1,
+		act:  "lol",
+		name: []string{"lol", "lola", "jola"},
+	}
+	fmt.Println(d1.name[1])
 	//Manipulate
 }

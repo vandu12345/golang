@@ -1,13 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+	"unsafe"
+)
 
 func main() {
 	//Boolean Type
 	// var n bool = true //default value false
 	// fmt.Println(n)
-	// n := 1 == 1
-	// fmt.Println(n)
+	n := 1 == 1
+	fmt.Println(n)
 
 	// Numeric Types
 	// 1.Integer
@@ -20,7 +24,10 @@ func main() {
 	// fmt.Println(a + int(b))
 
 	//Bitwise Operator
-	// a := 10
+	a := 5
+	fmt.Println(reflect.TypeOf(a))
+	fmt.Println(unsafe.Sizeof(a))
+
 	// b := 3
 	// fmt.Println(a & b)
 	// fmt.Println(^a) //
@@ -30,7 +37,7 @@ func main() {
 
 	//Bit Shifting
 	// a := 8
-	// fmt.Println(a << 3) // x<<y -> x*2^y   1000000
+	fmt.Println(a << 3) // x<<y -> x*2^y   1000000
 	// fmt.Println(a >> 3) //  x>>y->  x/2^y  0001
 
 	// 2.Floating Point
@@ -49,15 +56,15 @@ func main() {
 	//operation- add,sub,mult,div
 
 	//String - is immutable but we can do concatenation,represent UTF-8 Character
-	// s := "i am lol" //actually it's kind of array
-	// b := []byte(s)
-	// fmt.Printf("%v,%T\n", b, b)
-	// fmt.Printf("%v,%T\n", s, s)
+	s := "i am lol" //actually it's kind of array
+	b := []byte(s)
+	fmt.Printf("%v,%T\n", b, b)
+	fmt.Printf("%v,%T\n", s, s)
 	// fmt.Printf("%v,%T\n", string(s[2]), s[2])
 
-	// rune UTF-32,Alias for int32,special methods normally required to process
-	var r rune = 'a'
-	fmt.Printf("%v,%T\n", r, r)
+	// // rune UTF-32,Alias for int32,special methods normally required to process
+	// var r rune = 'a'
+	// fmt.Printf("%v,%T\n", r, r)
 
 	//Text Types
 }

@@ -25,9 +25,9 @@ func Print(s bot) {
 
 // }
 
-func (ebot) Print() string {
+func (eb ebot) Print() string {
 	return "English"
 }
-func (sbot) Print() string {
+func (sb sbot) Print() string {
 	return "Spanish"
 }

@@ -25,8 +25,7 @@ func main() {
 	// var value int = 2
 
 	// Switch statement without an
-	// optional statement and
-	// expression
+	// optional statement andexpression
 	// switch {
 	// case value == 1:
 	// 	fmt.Println("Hello")
@@ -39,6 +38,7 @@ func main() {
 	// }
 
 	var value interface{}
+	// value = int(6)
 	switch q := value.(type) {
 	case bool:
 		fmt.Println("value is of boolean type")
